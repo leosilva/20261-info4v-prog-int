@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de Faixa Etária</title>
+</head>
+
+<body>
+    <script>
+        let idade = prompt("Digite a idade:");
+        idade = parseInt(idade);
+
+        let mensagem = "";
+
+        if (idade >= 0 && idade < 15) {
+            mensagem = "Criança";
+        } else if (idade >= 15 && idade < 30) {
+            mensagem = "Jovem";
+        } else if (idade >= 30 && idade < 60) {
+            mensagem = "Adulto";
+        } else if (idade >= 60) {
+            mensagem = "Idoso";
+        } else {
+            mensagem = "Idade inválida";
+        }
+
+        document.write(mensagem)
+    </script>
+</body>
+</html>
