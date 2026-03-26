@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Título da Página</title>
+		<script type="text/javascript">
+			perguntas = ["Digite o seu nome:", 
+				"Digite a sua cor preferida:",
+				"Digite o seu prato preferido:",
+				"Digite o seu estilo de música:"
+			]
+			respostas = []
+			for (p in perguntas) {
+				respostas.push(prompt(perguntas[p]))
+			}
+
+			let mensagem = "Olá " + respostas[0] + ", analisei suas preferências e estou vendo que sua cor preferida é " 
+			+ respostas[1] + ", seu prato preferido é " + respostas[2] + " e que você gosta de ouvir " 
+			+ respostas[3] + ", agora que já sei de tudo isso, vou selecionar as melhores notícias para você ler hoje!"
+
+			document.write(mensagem)
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
