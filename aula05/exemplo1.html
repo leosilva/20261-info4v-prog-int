@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .negrito {
+                font-weight: bold;
+            }
+            .text-blue {
+                color: blue;
+            }
+        </style>
+        <script type="text/javascript">
+            function clique() {
+                let elements = document.querySelectorAll(".negrito")
+
+                for (indice in elements) {
+                    elm = elements[indice]
+                    elm.classList.remove("negrito")
+                    elm.classList.add("text-blue")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p class="negrito">Parágrafo em negrito</p>
+        <p>Parágrafo</p>
+        <p class="negrito">Parágrafo em negrito</p>
+        <button onclick="clique()">Ok</button>
+    </body>
+</html>

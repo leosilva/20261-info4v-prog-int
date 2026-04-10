@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exemplo Tabela Dinâmica</title>
+		<script type="text/javascript" src="tabelaDinamica.js"></script>
+	</head>
+	<body>
+		<label for="inputLinhas">Linhas:</label>
+		<input type="text" id="inputLinhas" name="inputLinhas" /><br/>
+		<label for="inputColunas">Colunas:</label>
+		<input type="text" id="inputColunas" name="inputColunas" /><br/>
+		<input type="button" name="botaoLimpar" id="botaoLimpar" value="Limpar" onclick="limparTabela()" />
+		<input type="button" name="botaoCriar" id="botaoCriar" value="Criar" onclick="iniciarCriacaoTabela()"/><br/>
+		<div id="divTabela"></div>
+	</body>
+</html>
