@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exemplo JQuery</title>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("p").on("mouseover mouseout", function(){
+					$(this).toggleClass("estilo1");
+					$(this).toggleClass("estilo2");
+				});
+			});
+		</script>
+		<style>
+			.estilo1 {
+				font-weight: bold;
+				color: red;
+				text-decoration: none;
+			}
+			.estilo2 {
+				font-style: italic;
+				color: blue;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="estilo1">Este é o PRIMEIRO parágrafo. Este é um texto qualquer só para o parágrafo ficar um pouco maior.</p>
+		<p class="estilo2">Este é o SEGUNDO parágrafo. Este é um texto qualquer só para o parágrafo ficar um pouco maior.</p>
+	</body>
+</html>

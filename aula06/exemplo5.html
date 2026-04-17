@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exemplo JQuery</title>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#div1").addClass("escondido").fadeIn(2000);
+				$("#div2").addClass("escondido").slideDown(2000)
+				$("#div3").animate({marginLeft: "500px"}, 2000);
+				$("#div4").animate({
+					width: $("#div4").width() / 2,
+					height: $("#div4").height() / 2,
+					marginLeft: "1000px"
+				}, 2000);
+			});
+		</script>
+		<style>
+			.escondido {
+				display: none;
+			}
+			div {
+				display: block;
+				height: 200px;
+				width: 500px;
+			}
+			#div1, #div3 {
+				background-color: lightblue;
+			}
+			#div2, #div4 {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<div id="div4"></div>
+	</body>
+</html>

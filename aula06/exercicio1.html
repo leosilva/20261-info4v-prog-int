@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Exemplo JQuery</title>
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			function mostrar_nome() {
+				let nome = $("#nome").val()
+				$("#resultado").html(nome)
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="nome"> 
+		<br/>
+		<button type="button" onclick="mostrar_nome()">Mostrar nome</button>
+		<br/>
+		<span id="resultado"></span>
+	</body>
+</html>
