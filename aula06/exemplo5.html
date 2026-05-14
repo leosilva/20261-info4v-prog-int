@@ -6,14 +6,17 @@
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
-				$("#div1").addClass("escondido").fadeIn(2000);
-				$("#div2").addClass("escondido").slideDown(2000)
+				$("#div1").addClass("escondido").fadeIn(3000);
+				$("#div2").addClass("escondido").slideDown(3000)
+                // $("#div3").addClass("escondido").slideDown(5000)
+                // $("#div4").addClass("escondido").fadeIn(7000);
 				$("#div3").animate({marginLeft: "500px"}, 2000);
 				$("#div4").animate({
-					width: $("#div4").width() / 2,
-					height: $("#div4").height() / 2,
-					marginLeft: "1000px"
-				}, 2000);
+					// width: $("#div4").width() / 2,
+					// height: $("#div4").height() / 2,
+					// marginLeft: "1000px",
+                    backgroundColor: "rgb( 20, 20, 20 )",
+				}, 3000);
 			});
 		</script>
 		<style>
