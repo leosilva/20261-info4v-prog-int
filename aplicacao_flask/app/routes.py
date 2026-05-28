@@ -15,3 +15,7 @@ def home():
 @app.route("/sobre")
 def sobre():
     return "Página Sobre"
+
+@app.route("/index2")
+def index2():
+    return render_template('index2.html')
