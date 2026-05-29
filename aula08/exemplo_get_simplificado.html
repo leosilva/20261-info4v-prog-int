@@ -11,7 +11,7 @@
             // Dispara a requisição quando o botão for clicado.
             $("#btnBuscar").on("click", function() {
                 // Faz uma requisição GET simplificada e entrega a resposta pronta no callback.
-                $.get("https://jsonplaceholder.typicode.com/posts/2", function(data) {
+                $.get("https://jsonplaceholder.typicode.com/posts/8", function(data) {
                     // Converte o objeto retornado em texto para exibição direta na página.
                     $("#resultado").html(JSON.stringify(data));
                 });

@@ -12,11 +12,12 @@
             $("#btnBuscar").on("click", function() {
                 $.ajax({
                     // Endereço do recurso que será consultado na API.
-                    url: "https://jsonplaceholder.typicode.com/posts/1",
+                    url: "https://jsonplaceholder.typicode.com/posts/101",
                     // Define que a comunicação com o servidor será feita pelo método GET.
                     type: "GET",
                     // Se a API responder com sucesso, mostra o título e o conteúdo recebidos.
                     success: function(response) {
+                        console.log(response)
                         $("#resultado").html(
                             "<h3>" + response.title + "</h3>" +
                             "<p>" + response.body + "</p>"
